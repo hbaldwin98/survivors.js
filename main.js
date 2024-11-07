@@ -32,6 +32,8 @@ const defaultResolution = getResolution(
     Math.max(1280, window.innerWidth),
     Math.max(720, window.innerHeight)
 );
+
+// Resolution scaling
 // Entity component system
 // Collision
 // bounding boxes AABB (good enough for this game)
@@ -41,6 +43,6 @@ const defaultResolution = getResolution(
 setCanvasDimensions(canvas, { ...defaultResolution });
 listenToChanges(canvas);
 startGame({
-    frameRate: 60,
+    frameRate: 240,
 }, canvas)
 
